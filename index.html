@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Murillo Santos — Software Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<body data-theme="light">
+<div class="cursor-dot">&gt;</div>
+<div class="cursor-ring"></div>
+
+<nav class="topnav">
+  <div class="brand"><div class="brand-mark">M</div> Murillo Santos</div>
+  <div class="nav-links">
+    <a href="#hero" data-i="navHome">Início</a>
+    <a href="#about" data-i="navAbout">Sobre</a>
+    <a href="#stack" data-i="navStack">Stack</a>
+    <a href="#work" data-i="navWork">Projetos</a>
+    <a href="#journey" data-i="navJourney">Trajetória</a>
+    <a href="#certs" data-i="navCerts">Certificações</a>
+    <a href="#contact" data-i="navContact">Contato</a>
+  </div>
+  <div class="nav-controls">
+    <button class="lang-pill" id="langPill"><span class="seg active" data-lang="pt">PT</span><span class="seg" data-lang="en">EN</span></button>
+    <button class="ctrl-btn" id="themeBtn" title="Theme">☀</button>
+  </div>
+</nav>
+
+<section class="hero" id="hero">
+  <div class="container" style="width:100%">
+    <div class="hero-top">
+      <div>
+        <div class="badge-row" data-reveal>
+          <span class="hero-badge"><span class="dot"></span> <span data-i="now">Atual</span> · USIMINAS</span>
+          <span class="hero-badge">.NET · Angular</span>
+          <span class="hero-badge" data-i="role">Engenheiro de Software · Full-Stack</span>
+        </div>
+        <h1 data-reveal data-delay="1">
+          <span class="navy" data-i="heroTagB">Escrevo códigos, resolvo problemas e bebo café.</span>
+        </h1>
+        <p class="hero-sub" data-reveal data-delay="2" data-i="heroSub"></p>
+        <div class="hero-cta" data-reveal data-delay="3">
+          <a href="#work" class="btn btn-primary"><span data-i="ctaProjects">Ver projetos</span> →</a>
+          <a href="#contact" class="btn btn-ghost" data-i="ctaContact">Entrar em contato</a>
+        </div>
+      </div>
+      <div class="hero-visual" data-reveal data-delay="4">
+        <div class="hero-portrait" style="max-width:320px;align-self:center;width:100%;">
+          <img src="assets/murillo-avatar.png" alt="Murillo Santos" />
+        </div>
+        <div class="hero-code">
+          <div class="title-row"><div class="dots"><span></span><span></span><span></span></div><span class="com">// murillo.cs</span></div>
+          <div class="line"><span class="key">public class</span> <span class="var">Murillo</span> {</div>
+          <div class="line">&nbsp;&nbsp;<span class="key">string</span> Role = <span class="str">"Software Eng."</span>;</div>
+          <div class="line">&nbsp;&nbsp;<span class="key">string</span> Stack = <span class="str">".NET / Angular"</span>;</div>
+          <div class="line">&nbsp;&nbsp;<span class="key">string</span> City = <span class="str">"São Paulo, BR"</span>;</div>
+          <div class="line">&nbsp;&nbsp;<span class="key">bool</span> Hiring = <span class="str">true</span>;</div>
+          <div class="line">}<span class="blink">▌</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-bottom">
+      <div class="hb-cell" data-reveal><div class="label">Repos</div><div class="value"><span class="navy">48</span> public</div></div>
+      <div class="hb-cell" data-reveal data-delay="1"><div class="label">Stack</div><div class="value">.NET · Angular</div></div>
+      <div class="hb-cell" data-reveal data-delay="2"><div class="label">Location</div><div class="value">São Paulo, BR</div></div>
+      <div class="hb-cell" data-reveal data-delay="3"><div class="label">Status</div><div class="value"><span style="color:#1ea65a">●</span> Open to work</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="section-num">01 /</span>
+      <h2 data-i="sectionAbout">Sobre</h2>
+      <span class="meta">murillo.lds01@gmail.com</span>
+    </div>
+    <div class="about-grid">
+      <div data-reveal>
+        <div class="photo-frame"><img src="assets/murillo-photo.png" alt="Murillo" style="width:100%;height:100%;object-fit:cover;position:relative;z-index:1;" /></div>
+      </div>
+      <div class="about-text" data-reveal data-delay="1">
+        <p data-i="aboutP1"></p>
+        <p data-i="aboutP2"></p>
+        <p data-i="aboutP3"></p>
+        <div class="about-meta">
+          <div class="about-meta-cell"><div class="label">Location</div><div class="value">São Paulo, BR</div></div>
+          <div class="about-meta-cell"><div class="label" data-i="educLabel">Educação</div><div class="value">FATEC Praia Grande</div></div>
+          <div class="about-meta-cell"><div class="label" data-i="workLabel">Foco</div><div class="value">.NET · Angular · <span class="navy">Cloud</span></div></div>
+          <div class="about-meta-cell"><div class="label">Languages</div><div class="value">PT · EN</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="stack">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="section-num">02 /</span>
+      <h2 data-i="sectionStack">Stack Técnico</h2>
+      <span class="meta">// production-ready</span>
+    </div>
+    <div class="stack-grid" data-reveal data-delay="1">
+      <div class="stack-col"><h3 data-i="stackLanguages">Languages & Frameworks</h3><div class="stack-list" id="stackLang"></div></div>
+      <div class="stack-col"><h3 data-i="stackBackend">Backend & Cloud</h3><div class="stack-list" id="stackCloud"></div></div>
+      <div class="stack-col"><h3 data-i="stackData">Data & ORM</h3><div class="stack-list" id="stackData"></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="section-num">03 /</span>
+      <h2 data-i="sectionWork">Projetos em Destaque</h2>
+      <span class="meta">6 · pinned</span>
+    </div>
+    <div class="filter-row" id="filters" data-reveal data-delay="1"></div>
+    <div class="project-grid" id="projects"></div>
+  </div>
+</section>
+
+<section id="journey">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="section-num">04 /</span>
+      <h2 data-i="sectionJourney">Trajetória</h2>
+      <span class="meta">2023 → now</span>
+    </div>
+    <div class="timeline-h" id="timeline" data-reveal data-delay="1"></div>
+  </div>
+</section>
+
+<section id="certs">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="section-num">05 /</span>
+      <h2 data-i="sectionCerts">Certificações & Idiomas</h2>
+      <span class="meta">// continuous learning</span>
+    </div>
+    <div class="certs-grid" data-reveal data-delay="1">
+      <div class="certs-col"><h3 data-i="certsLabel">Certificações</h3><ul class="cert-list" id="certsList"></ul></div>
+      <div class="certs-col"><h3 data-i="coursesLabel">Cursos</h3><ul class="cert-list" id="coursesList"></ul></div>
+      <div class="certs-col"><h3 data-i="langsLabel">Idiomas</h3><ul class="cert-list lang-list" id="langsList"></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-head" data-reveal style="justify-content:center">
+      <span class="section-num">06 /</span>
+      <h2 data-i="sectionContact">Vamos conversar</h2>
+    </div>
+    <div class="contact-block">
+      <h2 data-reveal>
+        <a href="mailto:murillo.lds01@gmail.com">murillo.lds01@gmail.com</a>
+      </h2>
+      <p data-reveal data-delay="1" data-i="contactCopy">Aberto a propostas, colaborações e papo técnico.</p>
+      <div class="contact-links" data-reveal data-delay="2">
+        <button class="btn btn-primary" id="copyEmailBtn"><span data-i="copyEmail">Copiar e-mail</span></button>
+        <a class="btn btn-ghost" href="https://github.com/MurilloLS" target="_blank">GitHub ↗</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/murillo-santos1/" target="_blank">LinkedIn ↗</a>
+        <a class="btn btn-ghost" href="assets/MurilloSantos_CV.pdf" target="_blank"><span data-i="downloadCv">Baixar CV</span> ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div data-i="footerNote">Construído com HTML, CSS e bastante café.</div>
+  <div>© <span id="year"></span> Murillo Santos · <span data-i="terminalHint">Pressione ` para abrir o terminal</span></div>
+</footer>
+
+<div class="term-launcher" id="termLauncher"><span class="kbd">`</span> <span>terminal</span></div>
+<div class="terminal-overlay" id="termOverlay">
+  <div class="terminal">
+    <div class="terminal-header">
+      <div class="dots"><span></span><span></span><span></span></div>
+      <span>murillo@portfolio ~ %</span>
+    </div>
+    <div class="terminal-body" id="termBody">
+      <div class="line"><span class="user">murillo@portfolio</span>:~$ welcome</div>
+      <div class="line out">Hello World! Type <span style="color:#5d86ff">help</span> to see available commands.</div>
+    </div>
+    <div class="terminal-input-line">
+      <span class="prompt">$</span>
+      <input class="terminal-input" id="termInput" autocomplete="off" spellcheck="false" placeholder="type a command..." />
+    </div>
+  </div>
+</div>
+
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

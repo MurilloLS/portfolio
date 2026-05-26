@@ -1,0 +1,16 @@
+/* Certifications */
+.certs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; border: 1px solid var(--line);
+  border-radius: 16px; overflow: hidden; background: var(--line); }
+.certs-col { background: var(--bg); padding: 28px; }
+.certs-col h3 { font-family: "IBM Plex Mono", monospace; font-size: 11px; color: var(--ink-dim);
+  text-transform: uppercase; letter-spacing: 0.18em; margin-bottom: 16px;
+  display: flex; align-items: center; gap: 8px; }
+.certs-col h3::before { content: ""; width: 6px; height: 6px; background: var(--navy); border-radius: 1px; }
+.cert-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 6px; }
+.cert-list li { padding: 12px 0; border-bottom: 1px solid var(--line);
+  display: flex; justify-content: space-between; align-items: baseline; gap: 12px; font-size: 14px; line-height: 1.4; }
+.cert-list li:last-child { border-bottom: none; }
+.cert-list li .name { text-wrap: pretty; }
+.cert-list li .org { font-family: "IBM Plex Mono", monospace; font-size: 11px; color: var(--ink-dim); white-space: nowrap; }
+.cert-list.lang-list .level { font-family: "IBM Plex Mono", monospace; font-size: 11px; color: var(--navy);
+  padding: 3px 8px; border: 1px solid var(--line); border-radius: 4px; background: var(--bg-soft); }

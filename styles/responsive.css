@@ -1,0 +1,10 @@
+@media (max-width: 900px) {
+  section { padding: 80px 24px; }
+  nav.topnav { padding: 14px 24px; }
+  .nav-links { display: none; }
+  .hero-bottom, .about-grid, .stack-grid, .project-grid, .contact-block, .timeline-h, .certs-grid, .hero-top { grid-template-columns: 1fr; gap: 32px; }
+  .hero-portrait { max-width: 320px; margin: 0 auto; }
+  .timeline-h::before { display: none; }
+  .photo-frame { max-width: 300px; }
+  body { cursor: auto; } .cursor-dot, .cursor-ring { display: none; }
+}

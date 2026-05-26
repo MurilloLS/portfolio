@@ -1,0 +1,33 @@
+/* ============================================================
+   main.css — manifest
+   ------------------------------------------------------------
+   Imports each stylesheet in the same cascading order as the
+   original inline <style> block. The order matters for the CSS
+   cascade — do not reorder unless you understand the impact.
+   ============================================================ */
+
+/* Foundations */
+@import url("./tokens.css");        /* CSS variables + dark theme */
+@import url("./base.css");          /* Resets, html/body, ::selection, links */
+
+/* Global UI */
+@import url("./cursor.css");        /* Custom terminal-prompt cursor */
+@import url("./nav.css");           /* Top navigation bar */
+@import url("./layout.css");        /* Section padding, container, headings */
+
+/* Sections (top → bottom of the page) */
+@import url("./hero.css");
+@import url("./about.css");
+@import url("./stack.css");
+@import url("./projects.css");
+@import url("./timeline.css");
+@import url("./certifications.css");
+@import url("./contact.css");
+@import url("./footer.css");
+
+/* Overlays & utilities */
+@import url("./terminal.css");      /* Terminal overlay + launcher + .i-empty */
+@import url("./reveal.css");        /* Scroll-reveal animations */
+
+/* Responsive — keep LAST so its overrides win */
+@import url("./responsive.css");

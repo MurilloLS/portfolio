@@ -1,0 +1,26 @@
+/* Nav */
+nav.topnav { position: fixed; top: 0; left: 0; right: 0; z-index: 50; padding: 20px 56px;
+  display: flex; align-items: center; justify-content: space-between;
+  background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(14px);
+  border-bottom: 1px solid transparent; transition: border-color .3s, padding .3s; }
+nav.topnav.scrolled { border-bottom-color: var(--line); padding: 14px 56px; }
+.brand { font-weight: 700; font-size: 15px; letter-spacing: -0.2px; display: flex; align-items: center; gap: 10px; }
+.brand-mark { width: 28px; height: 28px; border-radius: 8px; background: var(--navy); color: #fff;
+  display: flex; align-items: center; justify-content: center; font-family: "IBM Plex Mono", monospace;
+  font-size: 13px; font-weight: 600; }
+.nav-links { display: flex; gap: 36px; font-size: 14px; }
+.nav-links a { color: var(--ink-dim); transition: color .2s; position: relative; }
+.nav-links a:hover { color: var(--ink); }
+.nav-links a::after { content: ""; position: absolute; left: 0; right: 0; bottom: -22px; height: 2px;
+  background: var(--navy); transform: scaleX(0); transition: transform .25s; }
+.nav-links a.active::after { transform: scaleX(1); }
+.nav-controls { display: flex; gap: 8px; align-items: center; }
+.ctrl-btn { background: transparent; border: 1px solid var(--line); color: var(--ink); width: 36px; height: 36px;
+  border-radius: 8px; cursor: pointer; display: flex; align-items: center; justify-content: center;
+  font-family: "IBM Plex Mono", monospace; transition: all .2s; }
+.ctrl-btn:hover { border-color: var(--navy); color: var(--navy); }
+.lang-pill { padding: 6px; border: 1px solid var(--line); border-radius: 999px;
+  font-family: "IBM Plex Mono", monospace; font-size: 11px; cursor: pointer; color: var(--ink);
+  background: transparent; display: flex; align-items: center; gap: 2px; transition: all .2s; }
+.lang-pill .seg { padding: 3px 9px; border-radius: 999px; transition: all .2s; }
+.lang-pill .seg.active { background: var(--navy); color: #fff; }
