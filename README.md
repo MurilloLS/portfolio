@@ -1,4 +1,4 @@
-# Portfólio Murillo Santos — V2 (Corporate Light)
+# Portfólio Murillo Santos
 
 Portfólio bilíngue PT/EN em branco e navy, estilo corporativo moderno.
 
