@@ -1,12 +1,63 @@
 /* Timeline — horizontal */
-.timeline-h { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; position: relative; }
-.timeline-h::before { content: ""; position: absolute; left: 0; right: 0; top: 14px; height: 1px; background: var(--line); }
-.tl-h-item { padding: 0 16px; position: relative; }
-.tl-h-item::before { content: ""; position: absolute; top: 8px; left: 16px; width: 14px; height: 14px;
-  background: var(--bg); border: 2px solid var(--navy); border-radius: 50%; }
-.tl-h-item.active::before { background: var(--navy); box-shadow: 0 0 0 6px var(--navy-soft); }
-.tl-h-year { font-family: "IBM Plex Mono", monospace; font-size: 11px; color: var(--navy); margin-top: 36px;
-  text-transform: uppercase; letter-spacing: 0.12em; }
-.tl-h-title { font-size: 18px; font-weight: 600; letter-spacing: -0.01em; margin-top: 8px; line-height: 1.3; }
-.tl-h-org { font-size: 13px; color: var(--ink-dim); font-family: "IBM Plex Mono", monospace; margin-top: 4px; }
-.tl-h-desc { font-size: 13px; line-height: 1.55; color: var(--ink-dim); margin-top: 12px; text-wrap: pretty; }
+.timeline-h {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  position: relative;
+}
+.timeline-h::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 14px;
+  height: 1px;
+  background: var(--line);
+}
+.tl-h-item {
+  padding: 0 16px;
+  position: relative;
+}
+.tl-h-item::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  width: 14px;
+  height: 14px;
+  background: var(--bg);
+  border: 2px solid var(--navy);
+  border-radius: 50%;
+}
+.tl-h-item.active::before {
+  background: var(--navy);
+  box-shadow: 0 0 0 6px var(--navy-soft);
+}
+.tl-h-year {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  color: var(--navy);
+  margin-top: 36px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+.tl-h-title {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-top: 8px;
+  line-height: 1.3;
+}
+.tl-h-org {
+  font-size: 13px;
+  color: var(--ink-dim);
+  font-family: "IBM Plex Mono", monospace;
+  margin-top: 4px;
+}
+.tl-h-desc {
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--ink-dim);
+  margin-top: 12px;
+  text-wrap: pretty;
+}

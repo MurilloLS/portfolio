@@ -1,16 +1,62 @@
 /* Custom cursor — terminal prompt */
-body { cursor: none; }
-.cursor-dot { position: fixed; top: 0; left: 0; pointer-events: none; z-index: 9999;
-  transform: translate(-50%, -50%); will-change: transform;
-  font-family: "IBM Plex Mono", monospace; font-size: 16px; color: var(--navy);
-  font-weight: 600; line-height: 1; padding: 2px 4px;
-  background: var(--bg); border: 1px solid var(--navy); border-radius: 4px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08); white-space: nowrap;
-  transition: padding-right .2s ease, background .2s ease; }
-.cursor-dot::after { content: ""; display: inline-block; width: 0; height: 0; }
-body.cursor-active .cursor-dot { padding-right: 16px; background: var(--navy); color: var(--bg); }
-body.cursor-active .cursor-dot::after { width: 7px; height: 11px; background: currentColor;
-  margin-left: 4px; vertical-align: -1px; animation: caretBlink 1s steps(2) infinite; }
-@keyframes caretBlink { 50% { opacity: 0; } }
-.cursor-ring { display: none; }
-@media (hover: none) { .cursor-dot { display: none; } body { cursor: auto; } }
+body {
+  cursor: none;
+}
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  will-change: transform;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  color: var(--navy);
+  font-weight: 600;
+  line-height: 1;
+  padding: 2px 4px;
+  background: var(--bg);
+  border: 1px solid var(--navy);
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  white-space: nowrap;
+  transition:
+    padding-right 0.2s ease,
+    background 0.2s ease;
+}
+.cursor-dot::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+}
+body.cursor-active .cursor-dot {
+  padding-right: 16px;
+  background: var(--navy);
+  color: var(--bg);
+}
+body.cursor-active .cursor-dot::after {
+  width: 7px;
+  height: 11px;
+  background: currentColor;
+  margin-left: 4px;
+  vertical-align: -1px;
+  animation: caretBlink 1s steps(2) infinite;
+}
+@keyframes caretBlink {
+  50% {
+    opacity: 0;
+  }
+}
+.cursor-ring {
+  display: none;
+}
+@media (hover: none) {
+  .cursor-dot {
+    display: none;
+  }
+  body {
+    cursor: auto;
+  }
+}
